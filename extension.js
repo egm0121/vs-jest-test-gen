@@ -1,6 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
+const path = require('path');
 const run = require('jest-test-gen').run;
 
 // this method is called when your extension is activated
@@ -29,9 +30,10 @@ function activate(context) {
 		} catch (err) {
 			vscode.window.showErrorMessage('Failed to generate tests :(', [err.toString()]);
 		}
-		console.log('generated test file: ', testFilename);
+		const generatedTestFileUri = vscode.Uri.file(testFilename);
+		vscode.window.showTextDocument(generatedTestFileUri);
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Tests generated successfully!');
+		vscode.window.showInformationMessage(`Generated ${path.basename(testFilename)}`);
 	});
 
 	context.subscriptions.push(disposable);
