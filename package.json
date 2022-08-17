@@ -1,13 +1,17 @@
 {
   "name": "vs-jest-test-gen",
-  "displayName": "vs-jest-test-gen",
-  "description": "",
+  "displayName": "Jest Test Gen",
+  "description": "The fastest way to generate an initial jest unit test file from a js or ts source",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.70.0"
   },
   "categories": [
-    "Other"
+    "Testing",
+    "Snippets"
+  ],
+  "keywords": [
+    "jest", "test", "generator", "unittest","boilerplate"
   ],
   "activationEvents": [
     "onCommand:vs-jest-test-gen.generateForCurrentFile"
@@ -41,5 +45,15 @@
   },
   "dependencies": {
     "jest-test-gen": "^1.3.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/egm0121/vs-jest-test-gen/issues",
+    "email": "egm0121@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egm0121/vs-jest-test-gen.git"
+  },
+  "homepage": "https://github.com/egm0121/vs-jest-test-gen/blob/main/README.md",
+  "icon": "assets/logo.png"
 }

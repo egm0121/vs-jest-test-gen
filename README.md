@@ -1,35 +1,44 @@
-# vs-jest-test-gen README
+# VS Code jest-test-gen extension
 
-This is the README for your extension "vs-jest-test-gen". After writing up a brief description, we recommend including the following sections.
+![logo](assets/logo.png)
+
+Welcome to VS Code extension for jest-test-gen! 
+
+The fastest way to generate a jest unit test file from a js or ts source.
+
+Simply open a source file and select `Generate Jest tests` from the **command palette** (cmd + shift + P).
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Automates creation of initial unit test files taking dependencies into account.
 
-For example if there is an image subfolder under your extension project workspace:
+Parsing and test generation is avaialable for the following exports:
 
-\!\[feature X\]\(images/feature-x.png\)
+* Typescript typed React class components 🆕
+* Typescript typed Functional components 🆕
+* React Functional components 🆕
+* React Class based components 🆕
+* ES6 Classes default export or named exports
+* Exported named functions and arrow functions
+* Exported POJOs with methods
+* Async functions and methods
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Demos
 
-## Requirements
+### .ts file with React functional component
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+![demo on a .tsx file with React Component](assets/anim-react-comp.gif)
 
-## Extension Settings
+### .js file with a es6 class defined plus exported helper function
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+![js file with a es6 class defined plus exported helper function](assets/anim-es6-class.gif)
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Only ES6 exported functions, components, classes and POJOs will be used in the generated test file.
+
+Make sure that what you want to test is exported via `export` or `export default`.
 
 ## Release Notes
 
@@ -37,29 +46,5 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial extension release 🎉
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
