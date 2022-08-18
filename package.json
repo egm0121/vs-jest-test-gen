@@ -55,5 +55,6 @@
     "url": "https://github.com/egm0121/vs-jest-test-gen.git"
   },
   "homepage": "https://github.com/egm0121/vs-jest-test-gen/blob/main/README.md",
-  "icon": "assets/logo.png"
+  "icon": "assets/logo.png",
+  "publisher": "com-egm0121"
 }
