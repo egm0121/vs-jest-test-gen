@@ -2,9 +2,9 @@
   "name": "vs-jest-test-gen",
   "displayName": "Jest Test Gen",
   "description": "The fastest way to generate an initial jest unit test file from a js or ts source",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
-    "vscode": "^1.70.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Testing",
